@@ -7,6 +7,9 @@ export default function Contact() {
   const [keys, setKeys] = useState({});
   const [isLoading, setIsLoading] = useState(undefined);
   const [error, setError] = useState("slkjlksdf");
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
     if (keys["Control"] && keys["Enter"]) console.log(keys);
@@ -33,11 +36,7 @@ export default function Contact() {
               Get In Touch
             </h3>
 
-            <form
-              onSubmit={handleSubmit}
-              action="https://formspree.io/xgepwjdl"
-              method="post"
-            >
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
                   name="name"
@@ -91,6 +90,7 @@ export default function Contact() {
     e.persist();
     e.preventDefault();
     setIsLoading(true);
+
     axios
       .post("https://formspree.io/xgepwjdl", new FormData(e.target))
       .then((data) => {

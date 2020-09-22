@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "gatsby";
 import { FaAlignRight } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
@@ -11,7 +11,10 @@ export default function Navbar(props) {
       setNavIsClosed(true);
     }
   }
-  window.onresize = reportWindowSize;
+
+  useEffect(() => {
+    if (window) window.onresize = reportWindowSize;
+  }, []);
 
   return (
     <div

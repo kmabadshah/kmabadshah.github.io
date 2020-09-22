@@ -5,3 +5,7 @@
  */
 
 // You can delete this file if you're not using it
+
+import "jquery/dist/jquery.min.js";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap.js";
