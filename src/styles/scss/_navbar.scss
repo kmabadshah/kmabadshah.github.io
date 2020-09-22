@@ -1,0 +1,135 @@
+.toggled {
+  width: 100% !important;
+  opacity: 1 !important;
+}
+
+.display-enter {
+  display: block !important;
+  width: 100% !important;
+}
+
+#navbar {
+  height: 5rem;
+}
+
+#nav-logo {
+  font-weight: bold;
+  text-shadow: 0.2rem 0.15rem 0.25rem rgba(0, 0, 0, 0.2);
+}
+
+#nav-logo-first {
+    color: #102a42;
+    margin: 0 0.1rem 0 0;
+}
+
+#nav-logo-second {
+    color: #2caeba;
+}
+
+#nav-btn-open {
+  color: lightblue;
+  padding: 0;
+  transition: all 0.1s linear;
+}
+
+#nav-btn-open:focus {
+  outline: none;
+}
+
+#nav-btn-open:hover {
+  color: orange;
+}
+
+#sidebar {
+  height: 100%;
+  width: 0;
+  background: #f1f5f8;
+  top: 0;
+  left: 0;
+  position: fixed;
+  transition: all 0.3s ease-out;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+}
+
+#nav-btn-close {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #bb2525;
+  font-size: 2rem;
+}
+
+.nav-link-sidebar {
+  transition: 0.3s all ease-out;
+  text-decoration: none;
+  color: #627e98;
+  font-size: 2rem;
+  width: 15rem;
+  justify-content: center;
+  display: flex;
+  padding: 0 8rem;
+  border-radius: 0.4rem;
+
+  &:hover {
+    background-color: #bff8fd;
+    color: #52d1da;
+  }
+}
+
+.social-link-sidebar {
+  color: #102a42;
+  font-size: 2rem;
+  transition: 0.3s all ease-out;
+
+  &:hover {
+    color: #37bcc8;
+  }
+}
+
+.social-links-sidebar {
+  width: 16rem;
+  margin-top: 1rem;
+}
+
+.nav-link-main {
+  margin: 0 1rem;
+  font-size: 1.25rem;
+  text-transform: capitalize;
+  color: #102a42;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: #2caeba;
+    padding-bottom: 0.5rem;
+    border-bottom: 0.2rem solid #2caeba;
+    border-radius: 0.5rem;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  #nav-logo {
+    font-size: 1.8rem;
+  }
+  .nav-link-main {
+    font-size: 1.1rem;
+  }
+
+  #nav-btn-open {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  #nav-btn-open {
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  #nav-logo {
+    font-size: 2rem;
+  }
+}

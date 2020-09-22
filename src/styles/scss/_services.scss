@@ -1,0 +1,53 @@
+#services-banner {
+    font-weight: bold;
+}
+
+#services-fluid {
+    background-color: #f1f5f8;
+}
+
+#services {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.services-logos {
+    font-size: 2rem;
+}
+
+.service {
+    background-color: white;
+    margin: 1rem 0.5rem;
+    padding: 2rem;
+    text-align: justify;
+    border-radius: 0.3rem;
+    transition: all 0.3s ease-out;
+    border-color: transparent;
+
+    &:hover {
+        background-color: #2caeba;
+        color: #bff8fd;
+
+        .service-bar {
+            border-color: #bff8fd;
+        }
+    }
+
+    box-shadow: 0px 0px 0.2rem rgba(0,0,0,0.1);
+}
+
+.service-logo {
+    font-size: 2rem;
+}
+
+.service-title {
+    font-weight: bold;
+    text-transform: capitalize;
+    letter-spacing: 0.1rem;
+    font-size: 1.1rem;
+}
+
+.service-bar {
+    border-bottom: 0.1rem solid #2caeba;
+    width: 4rem;
+}

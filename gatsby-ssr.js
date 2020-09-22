@@ -5,3 +5,11 @@
  */
 
 // You can delete this file if you're not using it
+
+// import React from "react";
+
+// export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
+//   setHeadComponents([
+//     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>,
+//   ]);
+// };

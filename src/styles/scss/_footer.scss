@@ -1,0 +1,30 @@
+#footer-fluid {
+    background-color: #222;
+}
+
+.ft-social {
+    color: white;
+    font-size: 1.75rem;
+    margin: 0 0 0 1rem;
+    transition: all 0.3s ease-out;
+
+    &:hover {
+        color: #2caeba;
+    }
+}
+
+#copy {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    letter-spacing: 0.15rem;
+}
+
+@media only screen and (max-width: 576px) {
+
+    #copy {
+        font-size: 0.8rem;
+    }
+}

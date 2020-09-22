@@ -1,0 +1,118 @@
+@mixin contact-placeholder {
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  color: black;
+}
+
+@mixin contact-field {
+  background-color: #f1f5f8;
+  border: none;
+  margin: 0 0 1rem 0;
+}
+
+#contact-card {
+  border: none;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+#get-in-touch {
+  color: #617d98;
+  text-align: center;
+  font-weight: bold;
+}
+
+#contact-name {
+  @include contact-field;
+
+  &::placeholder {
+    @include contact-placeholder;
+  }
+}
+
+#contact-email {
+  @include contact-field;
+
+  &::placeholder {
+    @include contact-placeholder;
+  }
+}
+
+#contact-message {
+  @include contact-field;
+
+  &::placeholder {
+    @include contact-placeholder;
+  }
+}
+
+#contact-submit {
+  background-color: #2caeba;
+  padding: 0.75rem 0;
+  color: #bff8fd;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-out;
+
+  &:hover:enabled {
+    background-color: #88ebf2;
+    color: #044e53;
+  }
+
+  &:focus:enabled {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+}
+
+#toast {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1rem;
+  padding: 2rem;
+  font-size: 1rem;
+  transition: all 0.3s linear;
+  text-align: center;
+}
+
+.error {
+  height: 15%;
+}
+
+.success {
+  height: 10%;
+}
+
+.load-end {
+  display: flex !important;
+}
+
+#cross {
+  font-size: 2rem;
+  margin: 0 0 0 2rem;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+
+  &:active {
+    transform: rotate(720deg);
+  }
+}
+
+@media only screen and (min-width: 0) {
+  #contact-card {
+    min-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 35rem + 3rem) {
+  #contact-card {
+    min-width: 35rem;
+  }
+
+  #toast {
+    max-width: 35rem;
+  }
+}

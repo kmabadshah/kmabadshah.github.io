@@ -1,0 +1,66 @@
+
+#hero {
+  height: calc(100vh - 5rem);
+}
+
+#hero-left,
+#hero-right {
+  height: 100%;
+}
+
+#hero-name {
+  font-weight: bold;
+}
+
+#hero-desc {
+  font-weight: bold;
+  color: #617d98;
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+#hero-btn-contact {
+  width: fit-content;
+  font-weight: 600;
+  background-color: #2caeba;
+  color: #bff8fd;
+  letter-spacing: 0.1rem;
+  box-shadow: none;
+  transition: all 0.3s ease-out;
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.5);
+  font-size: 1rem;
+  padding: 0.3rem 1rem;
+
+  &:hover {
+    background-color: #88ebf2;
+    color: #044e53;
+  }
+}
+
+
+@media only screen and (min-width: 0px) {
+    #hero {
+        background: #e0fcff;
+    }
+    #navbar {
+        background: white;
+    }
+
+    #hero-name {
+        font-size: 2.3rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    #hero-name {
+        font-size: 3rem;
+    }
+}
+@media only screen and (min-width: 992px) {
+    #hero,
+    #navbar {
+        background: linear-gradient(to right, #e0fcff 64%, white 0%);
+    }
+}
+

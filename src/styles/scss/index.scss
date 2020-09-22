@@ -1,0 +1,45 @@
+@use './navbar';
+@use './hero';
+@use './services';
+@use './experiences';
+@use './projects';
+@use './articles';
+@use './footer';
+@use './about';
+@use './pg-projects';
+@use './contact';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box !important;
+  //font-family: "arial";
+
+  a:hover {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  a {
+      color: inherit;
+  }
+}
+
+:root {
+    overflow: auto;
+}
+
+.rm-pos {
+    position: static !important;
+}
+
+.bar {
+    border-bottom: 0.3rem solid #2caeba;
+    border-radius: 0.1rem;
+    width: 4.6rem;
+}
+
+
+.remove-color {
+    background: white !important;
+}

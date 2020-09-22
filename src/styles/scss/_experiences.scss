@@ -1,0 +1,171 @@
+#xp-banner {
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  margin: 5rem 0 0.5rem 0;
+  align-self: center;
+  text-align: center;
+}
+
+.btn-xp-top {
+  border: none;
+  background-color: transparent;
+  margin: 0 1rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-out;
+  border-bottom: 0.15rem solid white;
+  padding-bottom: 0.06rem;
+  font-weight: 500;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: #2caeba;
+    border-color: #2caeba;
+  }
+
+  &-selected {
+    color: #2caeba;
+    border-bottom: 0.15rem solid #2caeba !important;
+  }
+}
+
+.xp-title {
+  font-size: 1.5rem;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+
+.xp-company {
+  background-color: #dae2ec;
+  color: #617d98;
+  width: fit-content;
+  padding: 0.1rem 1rem;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin: 1rem 0;
+}
+
+.xp-date {
+  font-size: 1.2rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1rem;
+  color: #324d67;
+}
+
+.xp-job_desc {
+  display: flex;
+  text-align: justify;
+  padding: auto 0;
+
+  &-title {
+    margin: auto 0 auto 1rem;
+    color: #324d67;
+    font-size: 1rem;
+  }
+
+  &-icon {
+    font-size: 1.2rem;
+    color: #2caeba;
+  }
+
+  .icons,
+  .desc {
+    display: flex;
+    flex-flow: column;
+  }
+}
+
+#xp-more-info {
+  width: fit-content;
+  font-weight: 600;
+  background-color: #2caeba;
+  color: #bff8fd;
+  letter-spacing: 0.1rem;
+  box-shadow: none;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  transition: all 0.3s ease-out;
+  border: 1px solid rgba(211, 211, 211, 0.5);
+  box-shadow: 0px 0px 10px rgba(211, 211, 211, 0.5);
+  font-size: 1rem;
+  padding: 0.3rem 2.5rem;
+
+  &:hover {
+    background-color: #88ebf2;
+    color: #044e53;
+  }
+}
+
+.btn-xp-left {
+  border: 0;
+  background: transparent;
+  letter-spacing: 0.1rem;
+  transition: all 0.3s ease-out;
+  font-size: 1.5rem;
+  border-left: 0.2rem solid transparent;
+  margin: 0.5rem 0;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover,
+  &-selected {
+    border-color: #2caeba;
+    color: #2caeba;
+  }
+}
+
+@media only screen and (min-width: 0px) {
+  .xp-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+  }
+
+  .xp-company {
+    font-size: 1rem;
+  }
+
+  .xp-date {
+    font-size: 0.9rem;
+  }
+
+  .xp-job_desc {
+    &-title {
+      font-size: 0.9rem;
+    }
+  }
+
+  #xp-info {
+    padding: 0 2rem;
+  }
+
+  .btn-xp-top {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .xp-title {
+    font-size: 2rem;
+  }
+
+  .xp-date {
+    font-size: 1rem;
+  }
+  .xp-job_desc {
+    &-title {
+      font-size: 1rem;
+    }
+  }
+
+  .btn-xp-top {
+    font-size: 1.5rem;
+  }
+}
