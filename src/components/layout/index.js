@@ -1,6 +1,7 @@
 import React from "react";
 import Navbar from "./navbar";
 import Footer from "./footer";
+import SEO from "../seo";
 
 export default function Layout({ children, home }) {
   return (
@@ -12,6 +13,7 @@ export default function Layout({ children, home }) {
         backgroundColor: "#f1f5f8",
       }}
     >
+      <SEO />
       <Navbar home={home} />
       {children}
       <Footer />

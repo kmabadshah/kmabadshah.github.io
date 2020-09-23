@@ -1,9 +1,14 @@
 module.exports = {
-	pathPrefix: "/kmabadshah.github.io",
+  pathPrefix: "/",
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `KMA Badshah`,
+    description: `Hi. My name is KMA Badshah. I am a full stack web and mobile developer with over 1 year of experience. `,
+    author: `KMA Badshah`,
+    url: `
+https://kmabadshah.github.io/portfolio
+`,
+    image: `/images/image-self.jpg`,
+    twitterUsername: `@kmabadshah`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
