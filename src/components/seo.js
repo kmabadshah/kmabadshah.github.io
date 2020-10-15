@@ -28,7 +28,11 @@ const SEO = ({ title, description, image, article }) => {
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
       <meta name="description" content={seo.description} />
       <meta name="image" content={seo.image} />
-
+      <meta
+        name="google-site-verification"
+        content="2XpGlKqh6VDVLwP8vlZd61i02jK4ieExKDOQ10xe2F8"
+      />
+      <meta property="og:image" content={seo.image} />
       {seo.url && <meta property="og:url" content={seo.url} />}
 
       {(article ? true : null) && <meta property="og:type" content="article" />}

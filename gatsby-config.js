@@ -5,12 +5,14 @@ module.exports = {
     description: `Hi. My name is KMA Badshah. I am a full stack web and mobile developer with over 1 year of experience. `,
     author: `KMA Badshah`,
     url: `
-https://kmabadshah.github.io/portfolio
+https://kmabadshah.github.io/
 `,
     image: `/images/image-self.jpg`,
     twitterUsername: `@kmabadshah`,
+    siteUrl: `https://kmabadshah.github.io`
   },
   plugins: [
+    `gatsby-plugin-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -46,7 +48,7 @@ https://kmabadshah.github.io/portfolio
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `http://localhost:1338`,
         queryLimit: 1000, // Default to 100
         contentTypes: [`experience`, `project`, `article`],
         //If using single types place them in this array.

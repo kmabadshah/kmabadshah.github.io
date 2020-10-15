@@ -16,7 +16,7 @@ export default function Contact() {
   }, [keys]);
   return (
     <Layout style={{ overflow: "auto" }}>
-      <div className="container py-5 px-4 d-flex flex-column align-items-center justify-content-center flex-grow-1 overflow-auto">
+      <div className="container py-5 px-4 d-flex flex-column align-items-center justify-content-center flex-grow-1">
         <div
           id="toast"
           className={`${error ? "bg-danger error" : "bg-success success"} ${
