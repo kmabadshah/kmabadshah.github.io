@@ -50,7 +50,7 @@ export default function Projects({ data }) {
 
                       <div className="proj-links">
                         {proj_link.map(({ id, title }, index) => {
-                          return title.includes("github") ? (
+                          return title.includes("github.com") ? (
                             <a href={title} target="_blank" key={id}>
                               <FaGithubSquare className="proj-link" />
                             </a>
